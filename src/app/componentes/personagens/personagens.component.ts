@@ -13,7 +13,13 @@ export class PersonagensComponent implements OnInit {
   personagens: any = [];
 
   constructor(personagesServ: PersonagensService) { 
-    this.personagens = personagesServ.getTodos ();
+    // Sem requisição:
+    // this.personagens = personagesServ.getTodos ();
+
+
+    //Com requisição:
+    personagesServ.getTodos ()
+    .subscribe (personagens => this.personagens = personagens ['results']); //O 'results' vem da variavel da API
   }
 
   ngOnInit(): void {

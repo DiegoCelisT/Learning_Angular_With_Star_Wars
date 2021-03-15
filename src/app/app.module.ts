@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { ComponentesModule} from './componentes/componentes.module';
 import { routing } from './app.routing'
 
+//Adição da requisição HTTP:
+import { HttpClientModule } from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -13,7 +16,8 @@ import { routing } from './app.routing'
   imports: [
     BrowserModule,
     ComponentesModule,
-    routing
+    routing,
+    HttpClientModule  //new new new new new new
   ],
   providers: [],
   bootstrap: [AppComponent]

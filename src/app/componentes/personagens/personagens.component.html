@@ -11,8 +11,10 @@
                     <li>Altura: {{ personagem.height }}</li>
                     <li *ngIf="personagem.gender=='male'">Gênero: Masculino</li>
                     <li *ngIf="personagem.gender=='female'">Gênero: Feminino</li>
-                    <li>Preço da figura: {{ personagem.price | currency: 'BRL'}}</li>
-                    <li>Nota dos compradores: {{ personagem.rating | number: '1.0-1'}}</li>
+                    <!-- <li>Preço da figura: {{ personagem.price | currency: 'BRL'}}</li> -->
+                    <li>Ano de nascimento: {{ personagem.birth_year }}</li>
+                    <!-- <li>Nota dos compradores: {{ personagem.rating | number: '1.0-1'}}</li> -->
+                    <li>Url: <a href="{{ personagem.url }}" target="_blank">{{ personagem.url }}</a></li>
                     <li>Registrado em: {{ personagem.created | date: 'dd/MM/yyyy' }}</li>
                     <!-- <li>{{ personagem | json }}</li> -->
                 </ul>
