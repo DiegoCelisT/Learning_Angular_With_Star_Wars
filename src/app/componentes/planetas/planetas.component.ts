@@ -11,7 +11,8 @@ export class PlanetasComponent implements OnInit {
   planetas: any = []
 
   constructor(planetasServ: PlanetasService) { 
-    this.planetas = planetasServ.getPlanetas ();
+    planetasServ.getPlanetas ()
+    .subscribe (planetas => this.planetas = planetas ['results'])
   }
   ngOnInit(): void {
   }
