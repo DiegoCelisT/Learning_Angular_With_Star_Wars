@@ -38,4 +38,9 @@ export class PersonagensService {
     return this.httpzinho.get ('https:/swapi.dev/api/people/');
   }
 
+  //Para o personagem único precisamos criar uma nova função:
+  getPersonagem (id) {
+    return this.httpzinho.get ('https:/swapi.dev/api/people/'+id);
+  }
+
 }

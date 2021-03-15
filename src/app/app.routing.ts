@@ -7,12 +7,14 @@ import { ModuleWithProviders } from '@angular/core'
 import { PersonagensComponent } from './componentes/personagens/personagens.component';
 import { PlanetasComponent} from './componentes/planetas/planetas.component';
 import { HomeComponent } from './componentes/home/home.component';
+import { PersonagemComponent } from './componentes/personagem/personagem.component'
 
 // Se cria uma constante tipo Route e se criam as rotas assim:
 const APP_ROUTES: Routes = [
     { path: '', component: HomeComponent },
     { path: 'personagens', component: PersonagensComponent },
-    { path: 'planetas', component: PlanetasComponent }
+    { path: 'planetas', component: PlanetasComponent },
+    { path: 'personagem/:idzinho', component: PersonagemComponent} //Nesse caso se eu colocar no personagem.component.html qualquer numero ele vai entender, fica dinâmico desse jeito! (/:d)
 ];
 
 
