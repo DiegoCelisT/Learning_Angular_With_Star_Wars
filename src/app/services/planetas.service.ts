@@ -38,10 +38,13 @@ export class PlanetasService {
 
   constructor( private http2: HttpClient ) { }
 
-
-
   getPlanetas (){
     return this.http2.get ('https:/swapi.dev/api/planets/');
   }
+
+  getPlaneta (id) {
+    return this.http2.get ('https:/swapi.dev/api/planets/'+id);
+  }
+
 
 }

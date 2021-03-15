@@ -4,7 +4,8 @@ import { SnakecasePipe } from './../snakecase.pipe';
 import { PersonagensComponent } from './personagens/personagens.component';
 import { PlanetasComponent} from './planetas/planetas.component';
 import { HomeComponent } from './home/home.component';
-import { PersonagemComponent } from './personagem/personagem.component'
+import { PersonagemComponent } from './personagem/personagem.component';
+import { PlanetaComponent } from './planeta/planeta.component';
 
 
 
@@ -14,6 +15,7 @@ import { PersonagemComponent } from './personagem/personagem.component'
     PlanetasComponent,
     HomeComponent,
     PersonagemComponent,
+    PlanetaComponent,
     SnakecasePipe
   ],
   imports: [
@@ -23,7 +25,8 @@ import { PersonagemComponent } from './personagem/personagem.component'
     PersonagensComponent,
     PlanetasComponent,
     HomeComponent,
-    PersonagemComponent
+    PersonagemComponent,
+    PlanetaComponent
   ]
 })
 export class ComponentesModule { }

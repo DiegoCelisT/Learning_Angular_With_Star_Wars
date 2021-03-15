@@ -9,10 +9,9 @@ import { routing } from './app.routing'
 import { HttpClientModule } from '@angular/common/http';
 
 
-
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

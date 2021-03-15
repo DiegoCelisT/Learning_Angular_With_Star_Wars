@@ -15,6 +15,7 @@ import { PersonagensService} from '../../services/personagens.service';
 })
 export class PersonagemComponent implements OnInit {
 
+  //Variaveis com diminutivos brasileiros para saber que podem ter qualquer nome:
   constructor(private route_do_personagem: ActivatedRoute, private personagensServicinho: PersonagensService) { }
 
   id: number;
